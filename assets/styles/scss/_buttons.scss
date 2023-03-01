@@ -1,0 +1,22 @@
+.btn {
+	line-height: 2.25;
+}
+
+.btn-primary {
+	border: none !important;
+
+	color: $white;
+
+	background: $btn-button !important;
+}
+
+.btn-secondary {
+	&,
+	&:hover {
+		border: 1px solid $btn-button;
+
+		color: $btn-button;
+
+		background: none !important;
+	}
+}

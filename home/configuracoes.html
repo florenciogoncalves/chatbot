@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ChatBot</title>
+		<link rel="stylesheet" href="./../assets/styles/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./../assets/styles/css/style.css" />
+		<link rel="stylesheet" href="./../assets/styles/css/responsive.css" />
+	</head>
+	<body class="home-body pt-sm-5">
+		<nav class="nav-menu py-4">
+			<figure class="user-bar">
+				<div class="user-image-container">
+					<img
+						src="./../assets/image/user-image.svg"
+						alt=""
+						class="__user-image" />
+					<div class="__social"></div>
+				</div>
+				<figcaption class="user-information">
+					<span class="__name">Rhaenyra Targaryen</span>
+					<span class="__state">Status: conectado</span>
+				</figcaption>
+			</figure>
+			<ul class="links-list">
+				<li class="nav-option home">
+					<a href="./index.html"
+						><div class="__icon"></div>
+						<span class="__label">Home</span></a
+					>
+				</li>
+				<li class="nav-option audience">
+					<a href="./audiencia.html"
+						><div class="__icon"></div>
+						<span class="__label">Audiência</span></a
+					>
+				</li>
+				<li class="nav-option transmition">
+					<a href="./transmissao.html"
+						><div class="__icon"></div>
+						<span class="__label">Transmissão</span></a
+					>
+				</li>
+				<li class="nav-option chat">
+					<a href="./chat.html"
+						><div class="__icon"></div>
+						<span class="__label">Chat</span></a
+					>
+				</li>
+				<li class="nav-option flux">
+					<a href="./fluxo.html"
+						><div class="__icon"></div>
+						<span class="__label">Fluxo</span></a
+					>
+				</li>
+				<li class="nav-option configurations _current">
+					<a href="./configuracoes.html"
+						><div class="__icon"></div>
+						<span class="__label">Configurações</span></a
+					>
+				</li>
+				<li class="nav-option logout">
+					<a href=""
+						><div class="__icon"></div>
+						<span class="__label">Desconectar</span></a
+					>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="main-container col-sm-9 p-4 p-sm-5 mx-auto bg-white rounded-3">
+			<h1 class="__page-title">Configurações</h1>
+			<h2 class="__page-subtitle mb-5">Lorem ipsum Exemplo</h2>
+			<form action="">
+				<section class="make-update row row-cols-sm-2">
+					<div class="left">
+						<fieldset class="field-container">
+							<label for="name" class="__label">Nome</label>
+							<input
+								class="form-control py-2"
+								type="text"
+								placeholder="Lorem Ipsum"
+								name="name"
+								id="name" />
+						</fieldset>
+						<fieldset class="field-container">
+							<label for="fuse" class="__label mt-2 mt-sm-3">Fuso horário</label>
+							<input
+								class="form-control py-2"
+								type="text"
+								placeholder="Lorem Ipsum"
+								name="fuse"
+								id="fuse" />
+						</fieldset>
+					</div>
+
+					<div class="right h-100 mt-3 mt-sm-0">
+							<label for="logotipo">Logotipo</label>
+							<div class="logotipo-container rounded">
+								<input
+									name="logotipo"
+									class="upload-logotipo"
+									type="file"
+									title="Escolha um logotipo" />
+								<div class="file-content">
+									<label for="logotipo" class="file-label">Fazer upload</label>
+									<div class="upload-icon mx-auto mt-2"></div>
+								</div>
+							</div>
+					</div>
+				</section>
+				
+				<section class="zerar-container mt-4 gap-3 gap-sm-4 d-flex flex-column">
+					<h3 class="__title">Zerar companhia e Audiência</h3>
+
+					<div class="option-container _shadow-2 row rounded-3 p-4">
+						<button class="btn btn-primary col-12 col-sm-auto" type="submit">
+							Zerar contatos de Audiência
+						</button>
+						<p class="description col-12 col-sm p-0 pt-2 px-sm-5">
+							Lorem ipsum dolor sit amet. Qui voluptates et ipsa voluptatem vel incidunt galisum sit consequatar
+						</p>
+					</div>
+
+					<div class="option-container _shadow-2 row rounded-3 p-4">
+						<button class="btn btn-secondary col-12 col-sm-auto" type="submit">
+							Zerar contatos de Audiência
+						</button>
+						<p class="description col-12 col-sm p-0 pt-2 px-sm-5">
+							Lorem ipsum dolor sit amet. Qui voluptates et ipsa voluptatem vel incidunt galisum sit consequatar
+						</p>
+					</div>
+				</section>
+			</form>
+		</main>
+		<script type="module" src="./../assets/scripts/script.js"></script>
+	</body>
+</html>

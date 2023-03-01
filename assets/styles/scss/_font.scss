@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+	font-size: 16px;
+}
+* {
+	font-size: .95rem !important;
+}
+
+@media (min-width: 575.98px) {
+	html {
+		font-size: 17px;
+	}
+}
+
+@media (min-width: 767.98px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media (min-width: 991.98px) {
+	html {
+		font-size: 19px;
+	}
+}
+
+@media (min-width: 991.98px) {
+	html {
+		font-size: 20px;
+	}
+}

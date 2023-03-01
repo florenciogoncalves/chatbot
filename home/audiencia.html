@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ChatBot</title>
+		<link rel="stylesheet" href="./../assets/styles/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./../assets/styles/css/style.css" />
+		<link rel="stylesheet" href="./../assets/styles/css/responsive.css" />
+	</head>
+	<body class="home-body position-sticky top-0">
+		<nav class="nav-menu py-4">
+			<figure class="user-bar">
+				<div class="user-image-container">
+					<img
+						src="./../assets/image/user-image.svg"
+						alt=""
+						class="__user-image" />
+					<div class="__social"></div>
+				</div>
+				<figcaption class="user-information">
+					<span class="__name">Rhaenyra Targaryen</span>
+					<span class="__state">Status: conectado</span>
+				</figcaption>
+			</figure>
+			<ul class="links-list">
+				<li class="nav-option home">
+					<a href="./index.html"
+						><div class="__icon"></div>
+						<span class="__label">Home</span></a
+					>
+				</li>
+				<li class="nav-option audience _current">
+					<a href="./audiencia.html"
+						><div class="__icon"></div>
+						<span class="__label">Audiência</span></a
+					>
+				</li>
+				<li class="nav-option transmition">
+					<a href="./transmissao.html"
+						><div class="__icon"></div>
+						<span class="__label">Transmissão</span></a
+					>
+				</li>
+				<li class="nav-option chat">
+					<a href="./chat.html"
+						><div class="__icon"></div>
+						<span class="__label">Chat</span></a
+					>
+				</li>
+				<li class="nav-option flux">
+					<a href="./fluxo.html"
+						><div class="__icon"></div>
+						<span class="__label">Fluxo</span></a
+					>
+				</li>
+				<li class="nav-option configurations">
+					<a href="./configuracoes.html"
+						><div class="__icon"></div>
+						<span class="__label">Configurações</span></a
+					>
+				</li>
+				<li class="nav-option logout">
+					<a href=""
+						><div class="__icon"></div>
+						<span class="__label">Desconectar</span></a
+					>
+				</li>
+			</ul>
+		</nav>
+		<main class="main-container col-sm-9 p-3 mx-auto">
+			<section class="controlers row m-0 gap-3 mb-4">
+				<div
+					class="contacts-number d-flex flex-column col-4 align-content-center p-3 bg-white _shadow-3 rounded col">
+					<span class="mt-auto">Número de contatos</span>
+					<span class="number mb-auto">324</span>
+				</div>
+				<div class="col row w-100 gap-3">
+					<button class="col btn btn-primary">Adicionar</button>
+					<button class="col btn btn-primary">Importar contatos</button>
+					<button class="col btn btn-secondary">Baixar relatório</button>
+				</div>
+			</section>
+
+			<section class="contact-book bg-white rounded-3">
+				<div class="__header row m-0 px-2 py-3 px-sm-3 d-flex">
+					<div class="__left col-sm-6 p-0">
+						<div class="__title">Agendas de contato</div>
+						<div class="__subtitle">Lorem ipsum exemplo</div>
+					</div>
+
+					<div class="__right p-0 ms-auto col-sm-5 mt-2">
+						<form action="" class="form-control p-0 d-grid m-0">
+							<input
+								type="text"
+								class="search-input px-3"
+								placeholder="Pesquisar"
+								aria-label="Recipient's username"
+								aria-describedby="search" />
+							<button class="btn search-btn" type="submit" id="search"></button>
+						</form>
+					</div>
+				</div>
+				<div class="table-responsive p-2 pt-2">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="image-container ms-2">
+										<img
+											src="./../assets/image/user-image.svg"
+											alt=""
+											class="__image" />
+									</div>
+								</td>
+								<td>Lorem Ipsum</td>
+								<td>@emailexemplo2022@gmail.com</td>
+								<td>11858585856</td>
+								<td><button class="__export">Exportar</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+		<script type="module" src="./../assets/scripts/script.js"></script>
+	</body>
+</html>

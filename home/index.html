@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ChatBot</title>
+		<link rel="stylesheet" href="./../assets/styles/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./../assets/styles/css/style.css" />
+		<link rel="stylesheet" href="./../assets/styles/css/responsive.css" />
+	</head>
+	<body class="home-body">
+		<nav class="nav-menu py-4">
+			<figure class="user-bar">
+				<div class="user-image-container">
+					<img
+						src="./../assets/image/user-image.svg"
+						alt=""
+						class="__user-image" />
+					<div class="__social"></div>
+				</div>
+				<figcaption class="user-information">
+					<span class="__name">Rhaenyra Targaryen</span>
+					<span class="__state">Status: conectado</span>
+				</figcaption>
+			</figure>
+			<ul class="links-list">
+				<li class="nav-option home _current">
+					<a href="./index.html"
+						><div class="__icon"></div>
+						<span class="__label">Home</span></a
+					>
+				</li>
+				<li class="nav-option audience">
+					<a href="./audiencia.html"
+						><div class="__icon"></div>
+						<span class="__label">Audiência</span></a
+					>
+				</li>
+				<li class="nav-option transmition">
+					<a href="./transmissao.html"
+						><div class="__icon"></div>
+						<span class="__label">Transmissão</span></a
+					>
+				</li>
+				<li class="nav-option chat">
+					<a href="./chat.html"
+						><div class="__icon"></div>
+						<span class="__label">Chat</span></a
+					>
+				</li>
+				<li class="nav-option flux">
+					<a href="./fluxo.html"
+						><div class="__icon"></div>
+						<span class="__label">Fluxo</span></a
+					>
+				</li>
+				<li class="nav-option configurations">
+					<a href="./configuracoes.html"
+						><div class="__icon"></div>
+						<span class="__label">Configurações</span></a
+					>
+				</li>
+				<li class="nav-option logout">
+					<a href=""
+						><div class="__icon"></div>
+						<span class="__label">Desconectar</span></a
+					>
+				</li>
+			</ul>
+		</nav>
+		<main class="main-container row row-cols-3 column col-sm-9 p-3 mx-auto">
+			<header class="home-header bg-white rounded px-3 px-md-5 py-3 mb-3 gap-3">
+				<div class="information-container">
+					<span class="__left __header-title">Contatos restantes:</span>
+					<span class="__right">120 contatos restantes</span>
+				</div>
+				<div class="progress-container mt-2 mb-1">
+					<ul class="progress rounded-5">
+						<li class="__breakpoint _charged"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+						<li class="__breakpoint"></li>
+					</ul>
+				</div>
+			</header>
+
+			<div class="main-content w-100 p-0 d-flex flex-nowrap gap-4">
+				<article class="principal-content col-sm-8 p-0">
+					<section class="data-container gap-2 gap-sm-3 mb-4">
+						<div
+							class="information-container _shadow align-items-center row m-0 bg-white rounded p-2 px-3 p-sm-4">
+							<div class="__image _contacts col-3"></div>
+							<div class="data col">
+								<h2 class="__top">15.000</h2>
+								<span class="__bottom">Total de contatos</span>
+							</div>
+						</div>
+
+						<div
+							class="information-container _shadow align-items-center row m-0 bg-white rounded p-2 px-3 p-sm-4">
+							<div class="__image _phones col-3"></div>
+							<div class="data col">
+								<h2 class="__top">15.000</h2>
+								<span class="__bottom">Telefones conectados</span>
+							</div>
+						</div>
+					</section>
+
+					<section class="news-container bg-white rounded-3 _shadow">
+						<h3 class="__title text-center m-0">Novidades</h3>
+						<div id="newsCarousel" class="carousel slide" data-bs-ride="true">
+							<div class="carousel-indicators">
+								<button
+									type="button"
+									data-bs-target="#newsCarousel"
+									data-bs-slide-to="0"
+									class="active"
+									aria-current="true"
+									aria-label="Slide 1"></button>
+								<button
+									type="button"
+									data-bs-target="#newsCarousel"
+									data-bs-slide-to="1"
+									aria-label="Slide 2"></button>
+								<button
+									type="button"
+									data-bs-target="#newsCarousel"
+									data-bs-slide-to="2"
+									aria-label="Slide 3"></button>
+							</div>
+
+							<div class="carousel-inner bg-dark">
+								<div class="carousel-item active" data-bs-interval="4500">
+									<img
+										src="./../assets/image/carousel-image.svg"
+										class="d-block w-100"
+										alt="..." />
+									<div class="carousel-caption d-none d-md-block img-fluid">
+										<h5 class="__name">Lorem Ipsum</h5>
+										<p class="__subtitle">Lorem ipsum</p>
+									</div>
+								</div>
+								<div class="carousel-item" data-bs-interval="4500">
+									<img
+										src="./../assets/image/background/Cadastro.png"
+										class="d-block w-100"
+										alt="..." />
+									<div class="carousel-caption d-none d-md-block img-fluid">
+										<h5 class="__name">Lorem Ipsum</h5>
+										<p class="__subtitle">Lorem ipsum</p>
+									</div>
+								</div>
+								<div class="carousel-item" data-bs-interval="4500">
+									<img
+										src="./../assets/image/user-image.svg"
+										class="d-block w-100"
+										alt="..." />
+									<div class="carousel-caption d-none d-md-block img-fluid">
+										<h5 class="__name">Lorem Ipsum</h5>
+										<p class="__subtitle">Lorem ipsum</p>
+									</div>
+								</div>
+							</div>
+							<button
+								class="carousel-control-prev"
+								type="button"
+								data-bs-target="#newsCarousel"
+								data-bs-slide="prev">
+								<span
+									class="carousel-control-prev-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button
+								class="carousel-control-next"
+								type="button"
+								data-bs-target="#newsCarousel"
+								data-bs-slide="next">
+								<span
+									class="carousel-control-next-icon"
+									aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</section>
+				</article>
+
+				<aside
+					class="recently-added-contacts d-none d-sm-flex flex-column col bg-white rounded-3 p-3">
+					<div class="__top __title px-1 mb-3">
+						Contatos adicionados recentes
+					</div>
+					<ul class="users-list d-flex flex-column gap-4">
+						<li class="user-bar _shadow rounded-3 px-3 gap-2 py-2">
+							<img
+								src="./../assets/image/user-image.svg"
+								alt=""
+								class="__user-image" />
+							<a href="./chat.html" class="user-information">
+								<span class="__name">Rhaenyra Targaryen</span>
+								<span class="__number">11 900000000</span>
+							</a>
+						</li>
+						<li class="user-bar _shadow rounded-3 px-3 gap-2 py-2">
+							<img
+								src="./../assets/image/user-image.svg"
+								alt=""
+								class="__user-image" />
+							<a href="./chat.html" class="user-information">
+								<span class="__name">Rhaenyra Targaryen</span>
+								<span class="__number">11 900000000</span>
+							</a>
+						</li>
+						<li class="user-bar _shadow rounded-3 px-3 gap-2 py-2">
+							<img
+								src="./../assets/image/user-image.svg"
+								alt=""
+								class="__user-image" />
+							<a href="./chat.html" class="user-information">
+								<span class="__name">Rhaenyra Targaryen</span>
+								<span class="__number">11 900000000</span>
+							</a>
+						</li>
+						<li class="user-bar _shadow rounded-3 px-3 gap-2 py-2">
+							<img
+								src="./../assets/image/user-image.svg"
+								alt=""
+								class="__user-image" />
+							<a href="./chat.html" class="user-information">
+								<span class="__name">Rhaenyra Targaryen</span>
+								<span class="__number">11 900000000</span>
+							</a>
+						</li>
+						<li class="user-bar _shadow rounded-3 px-3 gap-2 py-2">
+							<img
+								src="./../assets/image/user-image.svg"
+								alt=""
+								class="__user-image" />
+							<a href="./chat.html" class="user-information">
+								<span class="__name">Rhaenyra Targaryen</span>
+								<span class="__number">11 900000000</span>
+							</a>
+						</li>
+						<li class="user-bar _shadow rounded-3 px-3 gap-2 py-2">
+							<img
+								src="./../assets/image/user-image.svg"
+								alt=""
+								class="__user-image" />
+							<a href="./chat.html" class="user-information">
+								<span class="__name">Rhaenyra Targaryen</span>
+								<span class="__number">11 900000000</span>
+							</a>
+						</li>
+						<li class="user-bar _shadow rounded-3 px-3 gap-2 py-2">
+							<img
+								src="./../assets/image/user-image.svg"
+								alt=""
+								class="__user-image" />
+							<a href="./chat.html" class="user-information">
+								<span class="__name">Rhaenyra Targaryen</span>
+								<span class="__number">11 900000000</span>
+							</a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+		</main>
+
+		<script src="./../assets/scripts/bootstrap.min.js"></script>
+		<script type="module" src="./../assets/scripts/script.js"></script>
+	</body>
+</html>
