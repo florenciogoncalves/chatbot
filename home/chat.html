@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="./../assets/styles/css/style.css" />
 		<link rel="stylesheet" href="./../assets/styles/css/responsive.css" />
 	</head>
-	<body class="home-body">
+	<body class="home-body _page--chat">
 		<nav class="nav-menu py-4">
 			<figure class="user-bar">
 				<div class="user-image-container">
@@ -69,8 +69,9 @@
 				</li>
 			</ul>
 		</nav>
-		<main class="main-container">
-			<aside class="left-menu">
+
+		<main class="main-container row m-0 bg-white h-100 ps-sm-5 pt-0">
+			<aside class="left-menu col-4 bg-dark ps-sm-3">
 				<div class="message-list-controllers">
 					<ul class="filter-container">
 						<li class="__filter _selected">Todos</li>
@@ -152,29 +153,35 @@
 					</li>
 				</ul>
 			</aside>
-			<article class="chat">
-				<section class="chat-header">
-					<img src="" alt="" class="__bot-iamge" />
+
+			<article class="chat col p-0">
+				<section class="chat-header bg-white">
+					<div class="image-container">
+						<img src="" alt=" " class="__bot-image img-fluid" />
+					</div>
 					<span class="__bot__name">Lorem ipsum silva</span>
 				</section>
-				<section class="chat-messages">
+
+				<section class="chat-body p-3">
 					<div class="realtime-message">
 						<hr class="__middline" />
-						<div class="__text">Conversa</div>
+						<div class="__text">Conversa ao vivo</div>
 					</div>
 					<p class="__text-message _received">Oi bem vindo ao bot</p>
 					<p class="__text-message">Obrigado !!</p>
 				</section>
-				<section class="create-message-area">
-					<div class="send-file">
+
+				<section class="chat-footer row m-0 row-cols-3">
+					<label for="__file" class="send-file bg-white rounded-circle">
 						<input
 							type="file"
 							name="file"
-							class="__file"
+							id="__file"
+							class="d-none"
 							title="Escolha um arquivo" />
-					</div>
-					<input type="text" class="__write-message" />
-					<button class="__send-file"></button>
+					</label>
+					<textarea class="__write-message bg-white rounded-5" placeholder="Escreva uma mensagem"></textarea>
+					<button class="__send-message bg-white rounded-circle"></button>
 				</section>
 			</article>
 		</main>
