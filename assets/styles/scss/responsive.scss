@@ -46,15 +46,7 @@
 			border-top-right-radius: 1.45rem;
 			border-bottom-right-radius: 1.45rem;
 			box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
-
-			.user-information {
-				display: none;
-			}
-			.__label {
-				display: none;
-			}
-
-			&._expanded {
+			&:hover {
 				padding: 0 0.45rem;
 				.nav-option {
 					padding: 1.05rem;
@@ -69,13 +61,21 @@
 					width: 100%;
 				}
 			}
+
+			.user-information {
+				display: none;
+			}
+			.__label {
+				display: none;
+			}
+
 			.nav-option {
 				a {
 					display: flex !important;
 					justify-content: center;
 				}
 			}
-			&:not(._expanded) .nav-option {
+			&:not(:hover) .nav-option {
 				border-bottom: 1px solid $background-gray;
 			}
 		}

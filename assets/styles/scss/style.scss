@@ -246,6 +246,7 @@ body {
 			}
 		}
 
+		&:hover,
 		&._expanded {
 			display: grid;
 			width: 85%;
@@ -332,6 +333,7 @@ body {
 		.main-content {
 			box-sizing: border-box;
 		}
+
 		// Home
 		.home-header {
 			width: 100%;
@@ -368,7 +370,6 @@ body {
 				}
 			}
 		}
-
 		.principal-content {
 			.data-container {
 				display: grid;
@@ -485,7 +486,6 @@ body {
 				}
 			}
 		}
-
 		.recently-added-contacts {
 			min-height: 0;
 			height: max-content;
@@ -521,6 +521,7 @@ body {
 				}
 			}
 		}
+
 		// Configurations
 		.__page-title {
 			margin: 0;
@@ -596,6 +597,7 @@ body {
 				font-size: 0.8rem !important;
 			}
 		}
+
 		// Audience
 		.controlers {
 			.contacts-number {
@@ -689,22 +691,68 @@ body {
 			}
 		}
 	}
+}
 
-	._text--green-medium {
-		color: $text-green;
+// Transmition
+._page--transmition {
+	tr {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		line-height: 2.5;
+		border-radius: 3rem;
 	}
-	.__header-title {
-		@extend ._text--green-medium;
-		font-size: 1.35rem !important;
-		font-weight: 700;
+	.__retry,
+	.__finished,
+	.__delete {
+		width: 1.35rem;
+		height: 1.35rem;
+		border-radius: 20%;
+		border: none;
+
+		background: none;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+
+		&.__retry {
+			background-image: url(./../../image/icon/retry.svg);
+		}
+		&.__finished {
+			background-image: url(./../../image/icon/finished.svg);
+		}
+		&.__delete {
+			background-image: url(./../../image/icon/delete.svg);
+		}
 	}
-	._shadow {
-		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+// Modal
+.modal {
+	.__label {
+		margin-bottom: .15rem;
+	
+		color: $background-green;
 	}
-	._shadow-2 {
-		box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.05);
+	.__input {
+		border: 1px solid $gray-border;
 	}
-	._shadow-3 {
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	}
+}
+
+// Ocurrências
+._text--green-medium {
+	color: $text-green;
+}
+.__header-title {
+	@extend ._text--green-medium;
+	font-size: 1.35rem !important;
+	font-weight: 700;
+}
+._shadow {
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+._shadow-2 {
+	box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.05);
+}
+._shadow-3 {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

@@ -291,12 +291,12 @@ body.cadastro-body {
   color: #323232;
   font-weight: 500;
 }
-.home-body .nav-menu._expanded {
+.home-body .nav-menu:hover, .home-body .nav-menu._expanded {
   display: grid;
   width: 85%;
   height: 100%;
 }
-.home-body .nav-menu._expanded .user-bar {
+.home-body .nav-menu:hover .user-bar, .home-body .nav-menu._expanded .user-bar {
   max-width: 11rem;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -304,7 +304,7 @@ body.cadastro-body {
   flex-direction: column;
   gap: 0.5rem;
 }
-.home-body .nav-menu._expanded .user-bar .user-image-container {
+.home-body .nav-menu:hover .user-bar .user-image-container, .home-body .nav-menu._expanded .user-bar .user-image-container {
   position: relative;
   width: max-content;
   height: max-content;
@@ -312,13 +312,13 @@ body.cadastro-body {
   -webkit-user-select: none;
   user-select: none;
 }
-.home-body .nav-menu._expanded .user-bar .user-image-container .__user-image {
+.home-body .nav-menu:hover .user-bar .user-image-container .__user-image, .home-body .nav-menu._expanded .user-bar .user-image-container .__user-image {
   height: 5.5rem;
   width: 5.5rem;
   border-radius: 50%;
   object-fit: cover;
 }
-.home-body .nav-menu._expanded .user-bar .user-image-container .__social {
+.home-body .nav-menu:hover .user-bar .user-image-container .__social, .home-body .nav-menu._expanded .user-bar .user-image-container .__social {
   position: absolute;
   width: 1.75rem;
   height: 1.75rem;
@@ -328,68 +328,68 @@ body.cadastro-body {
   background: url(./../../image/icon/whatsapp.svg) no-repeat center;
   background-size: contain;
 }
-.home-body .nav-menu._expanded .user-bar .user-information {
+.home-body .nav-menu:hover .user-bar .user-information, .home-body .nav-menu._expanded .user-bar .user-information {
   display: flex;
   max-width: 100%;
   gap: 0;
   align-items: center;
 }
-.home-body .nav-menu._expanded .user-bar .user-information .__name {
+.home-body .nav-menu:hover .user-bar .user-information .__name, .home-body .nav-menu._expanded .user-bar .user-information .__name {
   max-width: 100%;
   overflow: hidden;
   font-size: 0.8rem !important;
   text-overflow: ellipsis;
 }
-.home-body .nav-menu._expanded .user-bar .user-information .__state {
+.home-body .nav-menu:hover .user-bar .user-information .__state, .home-body .nav-menu._expanded .user-bar .user-information .__state {
   font-size: 0.635rem !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option.home._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.home.logout.logout a {
+.home-body .nav-menu:hover .links-list .nav-option.home._current.logout a, .home-body .nav-menu:hover .links-list .nav-option.home.logout.logout a, .home-body .nav-menu._expanded .links-list .nav-option.home._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.home.logout.logout a {
   color: rgba(241, 36, 36, 0.5490196078);
 }
-.home-body .nav-menu._expanded .links-list .nav-option.home._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.home.logout .__icon {
+.home-body .nav-menu:hover .links-list .nav-option.home._current .__icon, .home-body .nav-menu:hover .links-list .nav-option.home.logout .__icon, .home-body .nav-menu._expanded .links-list .nav-option.home._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.home.logout .__icon {
   background-image: url(./../../image/icon/sidebar/expanded/home.svg) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option.audience._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.audience.logout.logout a {
+.home-body .nav-menu:hover .links-list .nav-option.audience._current.logout a, .home-body .nav-menu:hover .links-list .nav-option.audience.logout.logout a, .home-body .nav-menu._expanded .links-list .nav-option.audience._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.audience.logout.logout a {
   color: rgba(241, 36, 36, 0.5490196078);
 }
-.home-body .nav-menu._expanded .links-list .nav-option.audience._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.audience.logout .__icon {
+.home-body .nav-menu:hover .links-list .nav-option.audience._current .__icon, .home-body .nav-menu:hover .links-list .nav-option.audience.logout .__icon, .home-body .nav-menu._expanded .links-list .nav-option.audience._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.audience.logout .__icon {
   background-image: url(./../../image/icon/sidebar/expanded/audience.svg) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option.transmition._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.transmition.logout.logout a {
+.home-body .nav-menu:hover .links-list .nav-option.transmition._current.logout a, .home-body .nav-menu:hover .links-list .nav-option.transmition.logout.logout a, .home-body .nav-menu._expanded .links-list .nav-option.transmition._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.transmition.logout.logout a {
   color: rgba(241, 36, 36, 0.5490196078);
 }
-.home-body .nav-menu._expanded .links-list .nav-option.transmition._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.transmition.logout .__icon {
+.home-body .nav-menu:hover .links-list .nav-option.transmition._current .__icon, .home-body .nav-menu:hover .links-list .nav-option.transmition.logout .__icon, .home-body .nav-menu._expanded .links-list .nav-option.transmition._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.transmition.logout .__icon {
   background-image: url(./../../image/icon/sidebar/expanded/transmition.svg) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option.chat._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.chat.logout.logout a {
+.home-body .nav-menu:hover .links-list .nav-option.chat._current.logout a, .home-body .nav-menu:hover .links-list .nav-option.chat.logout.logout a, .home-body .nav-menu._expanded .links-list .nav-option.chat._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.chat.logout.logout a {
   color: rgba(241, 36, 36, 0.5490196078);
 }
-.home-body .nav-menu._expanded .links-list .nav-option.chat._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.chat.logout .__icon {
+.home-body .nav-menu:hover .links-list .nav-option.chat._current .__icon, .home-body .nav-menu:hover .links-list .nav-option.chat.logout .__icon, .home-body .nav-menu._expanded .links-list .nav-option.chat._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.chat.logout .__icon {
   background-image: url(./../../image/icon/sidebar/expanded/chat.svg) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option.flux._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.flux.logout.logout a {
+.home-body .nav-menu:hover .links-list .nav-option.flux._current.logout a, .home-body .nav-menu:hover .links-list .nav-option.flux.logout.logout a, .home-body .nav-menu._expanded .links-list .nav-option.flux._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.flux.logout.logout a {
   color: rgba(241, 36, 36, 0.5490196078);
 }
-.home-body .nav-menu._expanded .links-list .nav-option.flux._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.flux.logout .__icon {
+.home-body .nav-menu:hover .links-list .nav-option.flux._current .__icon, .home-body .nav-menu:hover .links-list .nav-option.flux.logout .__icon, .home-body .nav-menu._expanded .links-list .nav-option.flux._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.flux.logout .__icon {
   background-image: url(./../../image/icon/sidebar/expanded/flux.svg) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option.logout._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.logout.logout.logout a {
+.home-body .nav-menu:hover .links-list .nav-option.logout._current.logout a, .home-body .nav-menu:hover .links-list .nav-option.logout.logout.logout a, .home-body .nav-menu._expanded .links-list .nav-option.logout._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.logout.logout.logout a {
   color: rgba(241, 36, 36, 0.5490196078);
 }
-.home-body .nav-menu._expanded .links-list .nav-option.logout._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.logout.logout .__icon {
+.home-body .nav-menu:hover .links-list .nav-option.logout._current .__icon, .home-body .nav-menu:hover .links-list .nav-option.logout.logout .__icon, .home-body .nav-menu._expanded .links-list .nav-option.logout._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.logout.logout .__icon {
   background-image: url(./../../image/icon/sidebar/expanded/logout.svg) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option.configurations._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.configurations.logout.logout a {
+.home-body .nav-menu:hover .links-list .nav-option.configurations._current.logout a, .home-body .nav-menu:hover .links-list .nav-option.configurations.logout.logout a, .home-body .nav-menu._expanded .links-list .nav-option.configurations._current.logout a, .home-body .nav-menu._expanded .links-list .nav-option.configurations.logout.logout a {
   color: rgba(241, 36, 36, 0.5490196078);
 }
-.home-body .nav-menu._expanded .links-list .nav-option.configurations._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.configurations.logout .__icon {
+.home-body .nav-menu:hover .links-list .nav-option.configurations._current .__icon, .home-body .nav-menu:hover .links-list .nav-option.configurations.logout .__icon, .home-body .nav-menu._expanded .links-list .nav-option.configurations._current .__icon, .home-body .nav-menu._expanded .links-list .nav-option.configurations.logout .__icon {
   background-image: url(./../../image/icon/sidebar/expanded/configurations.svg) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option._current {
+.home-body .nav-menu:hover .links-list .nav-option._current, .home-body .nav-menu._expanded .links-list .nav-option._current {
   border-radius: 1.5rem;
   background-color: rgba(96, 214, 106, 0.3098039216) !important;
 }
-.home-body .nav-menu._expanded .links-list .nav-option._current a {
+.home-body .nav-menu:hover .links-list .nav-option._current a, .home-body .nav-menu._expanded .links-list .nav-option._current a {
   color: #009329;
 }
 .home-body .main-container .main-content {
@@ -702,20 +702,67 @@ body.cadastro-body {
   font-weight: 500;
   background: none;
 }
-.home-body ._text--green-medium, .home-body .__header-title, .home-body .main-container .home-header .information-container .__right, .home-body .main-container .recently-added-contacts .__title {
+
+._page--transmition tr {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  line-height: 2.5;
+  border-radius: 3rem;
+}
+._page--transmition .__retry,
+._page--transmition .__finished,
+._page--transmition .__delete {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 20%;
+  border: none;
+  background: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+._page--transmition .__retry.__retry,
+._page--transmition .__finished.__retry,
+._page--transmition .__delete.__retry {
+  background-image: url(./../../image/icon/retry.svg);
+}
+._page--transmition .__retry.__finished,
+._page--transmition .__finished.__finished,
+._page--transmition .__delete.__finished {
+  background-image: url(./../../image/icon/finished.svg);
+}
+._page--transmition .__retry.__delete,
+._page--transmition .__finished.__delete,
+._page--transmition .__delete.__delete {
+  background-image: url(./../../image/icon/delete.svg);
+}
+
+.modal .__label {
+  margin-bottom: 0.15rem;
+  color: #009329;
+}
+.modal .__input {
+  border: 1px solid #323232;
+}
+
+._text--green-medium, .__header-title, .home-body .main-container .home-header .information-container .__right, .home-body .main-container .recently-added-contacts .__title {
   color: #69C55B;
 }
-.home-body .__header-title {
+
+.__header-title {
   font-size: 1.35rem !important;
   font-weight: 700;
 }
-.home-body ._shadow {
+
+._shadow {
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 }
-.home-body ._shadow-2 {
+
+._shadow-2 {
   box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.05);
 }
-.home-body ._shadow-3 {
+
+._shadow-3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 

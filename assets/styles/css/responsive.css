@@ -17,32 +17,32 @@
     border-bottom-right-radius: 1.45rem;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
   }
+  .home-body .nav-menu:hover {
+    padding: 0 0.45rem;
+  }
+  .home-body .nav-menu:hover .nav-option {
+    padding: 1.05rem;
+    height: 3rem;
+  }
+  .home-body .nav-menu:hover .nav-option a {
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .home-body .nav-menu:hover .__label {
+    display: block;
+    width: 100%;
+  }
   .home-body .nav-menu .user-information {
     display: none;
   }
   .home-body .nav-menu .__label {
     display: none;
   }
-  .home-body .nav-menu._expanded {
-    padding: 0 0.45rem;
-  }
-  .home-body .nav-menu._expanded .nav-option {
-    padding: 1.05rem;
-    height: 3rem;
-  }
-  .home-body .nav-menu._expanded .nav-option a {
-    gap: 0.5rem;
-    padding: 0;
-  }
-  .home-body .nav-menu._expanded .__label {
-    display: block;
-    width: 100%;
-  }
   .home-body .nav-menu .nav-option a {
     display: flex !important;
     justify-content: center;
   }
-  .home-body .nav-menu:not(._expanded) .nav-option {
+  .home-body .nav-menu:not(:hover) .nav-option {
     border-bottom: 1px solid #EEEEEE;
   }
   .home-body .main-container {
