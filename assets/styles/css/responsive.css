@@ -42,7 +42,7 @@
     display: flex !important;
     justify-content: center;
   }
-  .home-body .nav-menu:not(:hover) .nav-option {
+  .home-body .nav-menu:not(:hover) .nav-option:not(.logout) {
     border-bottom: 1px solid #EEEEEE;
   }
   .home-body .main-container:not(.pt-0) {

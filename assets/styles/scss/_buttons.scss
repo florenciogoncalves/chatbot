@@ -1,5 +1,6 @@
 .btn {
 	line-height: 2.25;
+	box-shadow: none;
 }
 
 .btn-primary {
@@ -19,4 +20,10 @@
 
 		background: none !important;
 	}
+}
+
+
+.form-control:focus {
+	border-color: inherit;
+	box-shadow: none;
 }

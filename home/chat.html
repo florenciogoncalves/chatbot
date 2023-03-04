@@ -71,83 +71,118 @@
 		</nav>
 
 		<main class="main-container row m-0 bg-white h-100 ps-sm-5 pt-0">
-			<aside class="left-menu col-4 bg-dark ps-sm-3">
-				<div class="message-list-controllers">
+			<aside class="contact-list col-4 bg-white ps-0 ps-sm-3 pe-sm-0">
+				<form action="" class="list-controllers">
 					<ul class="filter-container">
-						<li class="__filter _selected">Todos</li>
-						<li class="__filter">Não respondidas</li>
+						<li class="__filter _selected">
+							<button type="button" class="toggle">Todos</button>
+						</li>
+						<li class="__filter">
+							<button type="button" class="toggle">Não respondidas</button>
+						</li>
 					</ul>
 					<input
-						type="search"
-						name=""
-						id=""
-						class="__search-field"
+						type="text"
+						name="search"
+						id="search"
+						class="__search-field form-control"
 						placeholder="Pesquisar contato" />
-					<h1 class="title">Conversas</h1>
-				</div>
-				<ul class="message-list">
-					<li class="message">
-						<button class="message-btn" type="button">
-							<figure>
-								<img class="message__image" src="" alt="" />
-								<figcaption class="message__information">
-									<span class="message__name">Lorem ipsum Silva da Otta</span>
-									<p class="message__last-message">
+					<h1 class="__title">Conversas</h1>
+				</form>
+
+				<ul class="list-of-users">
+					<li class="user-bot _current">
+						<button class="user-btn" type="button">
+							<figure class="fig">
+								<div class="image-container">
+									<img class="__bot-image" src="" alt=" " />
+								</div>
+								<figcaption class="user-informations">
+									<span class="__name">Lorem ipsum Silva da Otta</span>
+									<p class="__last-message">
 										Bem vindo ao nosso bot do wpp!
 									</p>
 								</figcaption>
+								<div class="attrs">
+									<span class="message-counter">5</span>
+									<span class="message-time">15 hrs</span>
+								</div>
 							</figure>
 						</button>
 					</li>
-					<li class="message">
-						<button class="message-btn" type="button">
-							<figure>
-								<img class="message__image" src="" alt="" />
-								<figcaption class="message__information">
-									<span class="message__name">Lorem ipsum Silva da Otta</span>
-									<p class="message__last-message">
+					<li class="user-bot">
+						<button class="user-btn" type="button">
+							<figure class="fig">
+								<div class="image-container">
+									<img class="__bot-image" src="" alt=" " />
+								</div>
+								<figcaption class="user-informations">
+									<span class="__name">Lorem ipsum Silva da Otta</span>
+									<p class="__last-message">
 										Bem vindo ao nosso bot do wpp!
 									</p>
 								</figcaption>
+								<div class="attrs">
+									<span class="message-counter">5</span>
+									<span class="message-time">15 hrs</span>
+								</div>
 							</figure>
 						</button>
 					</li>
-					<li class="message">
-						<button class="message-btn" type="button">
-							<figure>
-								<img class="message__image" src="" alt="" />
-								<figcaption class="message__information">
-									<span class="message__name">Lorem ipsum Silva da Otta</span>
-									<p class="message__last-message">
+					<li class="user-bot">
+						<button class="user-btn" type="button">
+							<figure class="fig">
+								<div class="image-container">
+									<img class="__bot-image" src="" alt=" " />
+								</div>
+								<figcaption class="user-informations">
+									<span class="__name">Lorem ipsum Silva da Otta</span>
+									<p class="__last-message">
 										Bem vindo ao nosso bot do wpp!
 									</p>
 								</figcaption>
+								<div class="attrs">
+									<span class="message-counter">5</span>
+									<span class="message-time">15 hrs</span>
+								</div>
 							</figure>
 						</button>
 					</li>
-					<li class="message">
-						<button class="message-btn" type="button">
-							<figure>
-								<img class="message__image" src="" alt="" />
-								<figcaption class="message__information">
-									<span class="message__name">Lorem ipsum Silva da Otta</span>
-									<p class="message__last-message">
+					<li class="user-bot">
+						<button class="user-btn" type="button">
+							<figure class="fig">
+								<div class="image-container">
+									<img class="__bot-image" src="" alt=" " />
+								</div>
+								<figcaption class="user-informations">
+									<span class="__name">Lorem ipsum Silva da Otta</span>
+									<p class="__last-message">
 										Bem vindo ao nosso bot do wpp!
 									</p>
 								</figcaption>
+								<div class="attrs">
+									<span class="message-counter">5</span>
+									<span class="message-time">15 hrs</span>
+								</div>
 							</figure>
 						</button>
 					</li>
-					<li class="message">
-						<button class="message-btn" type="button">
-							<figure>
-								<img class="message__image" src="" alt="" />
-								<figcaption class="message__information">
-									<span class="message__name">Lorem ipsum Silva da Otta</span>
-									<p class="message__last-message">
+					<li class="user-bot">
+						<button class="user-btn" type="button">
+							<figure class="fig">
+								<div class="image-container">
+									<img class="__bot-image" src="" alt=" " />
+								</div>
+								<figcaption class="user-informations">
+									<span class="__name">Lorem ipsum Silva da Otta</span>
+									<p class="__last-message">
 										Bem vindo ao nosso bot do wpp!
 									</p>
 								</figcaption>
+								<div class="attrs">
+									<span class="message-counter">5</span>
+									<span class="message-time">15 hrs</span>
+								</div>
 							</figure>
 						</button>
 					</li>
@@ -164,8 +199,9 @@
 
 				<section class="chat-body p-3">
 					<div class="realtime-message">
-						<hr class="__middline" />
+						<div class="__middline"></div>
 						<div class="__text">Conversa ao vivo</div>
+						<div class="__middline"></div>
 					</div>
 					<p class="__text-message _received">Oi bem vindo ao bot</p>
 					<p class="__text-message">Obrigado !!</p>
@@ -180,7 +216,9 @@
 							class="d-none"
 							title="Escolha um arquivo" />
 					</label>
-					<textarea class="__write-message bg-white rounded-5" placeholder="Escreva uma mensagem"></textarea>
+					<textarea
+						class="__write-message bg-white rounded-5"
+						placeholder="Escreva uma mensagem"></textarea>
 					<button class="__send-message bg-white rounded-circle"></button>
 				</section>
 			</article>
