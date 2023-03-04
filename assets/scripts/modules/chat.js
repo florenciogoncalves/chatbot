@@ -81,6 +81,11 @@ export default function chat() {
 					.querySelector(".filter-container ._selected")
 					.classList.remove("_selected");
 			el.classList.add("_selected");
+
+			if(el.classList.contains('_unviewed'))
+			document.querySelector('.list-of-users').classList.add('_filter-on')
+			if(el.classList.contains('_all'))
+			document.querySelector('.list-of-users').classList.remove('_filter-on')
 		});
 	});
 
@@ -92,6 +97,7 @@ export default function chat() {
 					.querySelector(".list-of-users ._current")
 					.classList.remove("_current");
 			el.classList.add("_current");
+			el.classList.remove('_new-message')
 		});
 	});
 }
