@@ -1,5 +1,5 @@
-// import sideBar from './modules/sidebar.js'
-// sideBar()
+import mobile from "./modules/mobile.js";
+import chat from "./modules/chat.js";
 
-import chat from './modules/chat.js'
-chat()
+mobile();
+if (document.querySelector("._page--chat")) chat();

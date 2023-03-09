@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="./../assets/styles/css/style.css" />
 		<link rel="stylesheet" href="./../assets/styles/css/responsive.css" />
 	</head>
-	<body class="home-body">
+	<body class="home-body _page--flux">
 		<nav class="nav-menu py-4">
 			<figure class="user-bar">
 				<div class="user-image-container">
@@ -69,7 +69,106 @@
 				</li>
 			</ul>
 		</nav>
-		<main class="main-container col-sm-9 p-3 mx-auto"></main>
+		<div class="mobile-backdrop"></div>
+		<input type="button" class="menu-button" />
+
+		<main class="main-container col-sm-9 rounded-3 row m-0 bg-white pt-0">
+			<aside class="left-side col-5 bg-white p-3 py-4">
+				<h1 class="__title">Configurações de Fluxo</h1>
+				<span class="__subtitle">Lorem ipsum exemplo</span>
+				<form action="" class="content">
+					<div class="text-container">
+						<div class="controllers">
+							<button class="text-modifier" type="button"></button>
+							<button class="text-modifier" type="button"></button>
+							<button class="text-modifier" type="button"></button>
+							<button class="text-modifier" type="button"></button>
+						</div>
+						<textarea
+							name="flux-text"
+							class="flux-text"
+							placeholder="Escreva o seu texto..."></textarea>
+					</div>
+
+					<div class="middline-text">
+						<div class="__middline"></div>
+						<div class="__text">Aguardando resposta</div>
+					</div>
+
+					<div class="delay-container">
+						<input
+							type="range"
+							name="delay-range"
+							id="delay-range"
+							class="delay-range" min="0" max="6" value="3"/>
+						<span class="delay-count">6 seg</span>
+						<div class="checkbox-container">
+							<input type="checkbox" id="active-typing" />
+							<label for="active-typing">Ativar “digitando...”</label>
+						</div>
+						<span class="delay-footer-message">Delay</span>
+					</div>
+
+					<div class="options">
+						<label class="option" for="">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Texto</span
+							><input type="text" />
+						</label>
+						<label class="option" for="image">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Imagem</span
+							><input id="image" type="file" accept="image/*" />
+						</label>
+						<label class="option" for="video">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Video</span
+							><input id="video" type="file" accept="video/*" />
+						</label>
+						<label class="option" for="file">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Arquivo</span
+							><input id="file" type="file" />
+						</label>
+						<label class="option" for="">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Autooff</span
+							><input type="text" />
+						</label>
+						<label class="option" for="">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Delay</span
+							><input type="text" />
+						</label>
+						<label class="option" for="">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Salvar</span
+							><input type="text" />
+						</label>
+						<label class="option" for="audio">
+							<img src="" alt="" class="__icon" /><span class="__label"
+								>Audio</span
+							><input id="audio" type="file" accept="audio/*" />
+						</label>
+					</div>
+				</form>
+			</aside>
+
+			<article class="right-side col p-0 p-sm-3">
+				<div class="flux-container rounded-3">
+          <div class="header">
+					<button class="opt new"></button>
+					<button class="opt view"></button><button class="opt copy"></button>
+				</div>
+
+				<div class="main-flux">
+					<div class="flux-card">
+						<div class="flux-header"></div>
+					</div>
+				</div>
+        </div>
+			</article>
+		</main>
 		<script type="module" src="./../assets/scripts/script.js"></script>
 	</body>
 </html>

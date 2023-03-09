@@ -145,7 +145,7 @@ body {
 	position: relative;
 	// Menu lateral
 	.nav-menu {
-		position: sticky;
+		position: fixed;
 		top: 0;
 		display: none;
 		grid-template-rows: auto 1fr;
@@ -249,7 +249,7 @@ body {
 		&:hover,
 		&._expanded {
 			display: grid;
-			width: 85%;
+			width: 80%;
 			height: 100%;
 			.user-bar {
 				max-width: 11rem;
@@ -893,6 +893,7 @@ body {
 		}
 		.chat {
 			display: grid;
+			height: 100%;
 			grid-template-rows: auto 1fr auto;
 
 			background: url(./../../image/background/chat.svg) no-repeat center;
@@ -925,33 +926,12 @@ body {
 				overflow-y: scroll;
 				display: flex;
 				flex-direction: column;
-				gap: .75rem;
+				gap: 0.75rem;
 
 				&::-webkit-scrollbar {
 					display: none;
 				}
 
-				.realtime-message {
-					align-items: center;
-					display: grid;
-					grid-template-columns: 1fr max-content 1fr;
-					.__text {
-						width: max-content;
-						height: max-content;
-						padding: 1rem;
-
-						font-size: 0.875rem !important;
-						line-height: 1;
-						font-weight: 500;
-					}
-					.__middline {
-						width: 100%;
-						height: 1px;
-						margin: auto 0;
-
-						background: #000;
-					}
-				}
 				.__text-message {
 					max-width: 45%;
 					width: max-content;
@@ -975,9 +955,9 @@ body {
 			.chat-footer {
 				display: grid;
 				grid-template-columns: auto 1fr auto;
-				padding: 0 1.5rem 1.5rem 1rem;
+				padding: 0.75rem 1.5rem 1.25rem 1rem;
 				gap: 1.25rem;
-				align-items: center;
+				align-items: flex-end;
 				.send-file {
 					height: 3.5rem;
 					width: 3.5rem;
@@ -985,15 +965,37 @@ body {
 					background: url(./../../image/icon/file.svg) no-repeat center;
 					background-size: 1.3rem;
 				}
-				.__write-message {
-					height: max-content;
+				.write-message-container {
+					height: 100%;
+					max-height: 10rem;
 					width: 100%;
-					padding: 0rem 1.25rem;
-					border: none;
-					outline: none;
-					resize: none;
+					display: flex;
+					align-items: center;
+					padding: 0.6rem 0.75rem 0.6rem 1.25rem;
+					margin: 0;
+					box-sizing: border-box;
+					overflow: hidden;
 
 					line-height: 1.5;
+					.__write-message {
+						max-height: 100%;
+						height: max-content;
+						width: 100%;
+						padding: 0;
+						outline: none;
+						resize: none;
+						border: none;
+
+						&::-webkit-scrollbar {
+							width: 5px;
+							background: none;
+						}
+						&::-webkit-scrollbar-thumb {
+							border-radius: 1rem;
+
+							background: $gray-indicator;
+						}
+					}
 				}
 				.__send-message {
 					width: 2.85rem;
@@ -1002,6 +1004,69 @@ body {
 
 					background: url(./../../image/icon/send.svg) no-repeat center;
 					background-size: 1.15rem;
+				}
+			}
+		}
+	}
+}
+
+// Flux
+._page--flux {
+	display: flex;
+	align-items: center;
+	.main-container {
+		height: 90%;
+		max-height: 900px;
+		margin: auto !important;
+		overflow: hidden;
+		top: 50;
+		.left-side {
+			.__title {
+				font-size: 1.35rem !important;
+				font-weight: 500;
+			}
+			.__subtitle {
+				width: max-content;
+				margin: 0;
+
+				color: $text-green-light;
+				text-transform: uppercase;
+				font-size: 0.75rem !important;
+			}
+		}
+		.right-side {
+			width: 100%;
+			height: 100%;
+			.flux-container {
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+				.header {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					gap: 2rem;
+					padding: .65rem 0;
+				
+					background: rgba($color: $black, $alpha: 0.63);
+
+					.opt {
+						width: .9rem;
+						height: .9rem;
+						border: none;
+
+						background: no-repeat center;
+						background-size: contain;
+						&.new{background-image: url(./../../image/icon/new.svg);}
+						&.view{background-image: url(./../../image/icon/view.svg);}
+						&.copy{background-image: url(./../../image/icon/copy.svg);}
+					}
+				}
+				.main-flux {
+					height: 100%;
+					width: 100%;
+
+					background: #e4e5ea;
 				}
 			}
 		}
@@ -1037,4 +1102,28 @@ body {
 }
 ._shadow-3 {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.__middline {
+	width: 100%;
+	height: 1px;
+	margin: auto 0;
+
+	background: #000;
+}
+
+.middline-text {
+	width: 100%;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	.__text {
+		width: max-content;
+		height: max-content;
+		padding: 1rem;
+
+		font-size: 0.875rem !important;
+		line-height: 1;
+		font-weight: 500;
+	}
 }

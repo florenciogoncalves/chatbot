@@ -2,6 +2,30 @@
 @import "colors";
 
 @media (max-width: 575.98px) {
+._expanded ~ .mobile-backdrop {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	z-index: 990;
+	overflow: hidden;
+	
+	background: rgba($color: #000, $alpha: .63);
+}
+	.menu-button {
+		position: fixed;
+		bottom: 1.25rem;
+		left: 1.25rem;
+		z-index: 998;
+		border: none;
+		border-radius: 50%;
+		width: 2.75rem;
+		height: 2.75rem;
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+
+		background: url(./../../image/icon/menu.png) no-repeat center, $white;
+		background-size: 1.25rem;
+	}
 }
 
 // Dispositivos small (telefones em modo paisagem, com 576px ou mais)
@@ -30,6 +54,9 @@
 		position: relative;
 
 		background-size: 100% 100%;
+	}
+	.menu-button {
+		display: none;
 	}
 	.home-body {
 		// Menu lateral
@@ -79,7 +106,10 @@
 				border-bottom: 1px solid $background-gray;
 			}
 		}
-		.main-container:not(.pt-0) {
+		.mobile-backdrop{
+			display: none;
+		}
+		.main-container:not(.pt-0, .flux-main) {
 			padding-top: 3rem !important;
 			// Home
 			.home-header {
@@ -123,7 +153,8 @@
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
 
-				.left, .right {
+				.left,
+				.right {
 					width: 100%;
 				}
 			}

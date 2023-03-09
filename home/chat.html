@@ -69,6 +69,8 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="mobile-backdrop"></div>
+		<input type="button" class="menu-button" />
 
 		<main class="main-container row m-0 bg-white h-100 ps-sm-5 pt-0">
 			<aside class="contact-list col-4 bg-white ps-0 ps-sm-3 pe-sm-0">
@@ -95,13 +97,14 @@
 						<button class="user-btn" type="button">
 							<figure class="fig">
 								<div class="image-container">
-									<img class="__bot-image" src="./../assets/image/user-image.svg" alt=" " />
+									<img
+										class="__bot-image"
+										src="./../assets/image/user-image.svg"
+										alt=" " />
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -118,9 +121,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -137,9 +138,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -156,9 +155,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -175,9 +172,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -187,11 +182,6 @@
 						</button>
 					</li>
 
-
-
-
-
-
 					<li class="user-bot _new-message">
 						<button class="user-btn" type="button">
 							<figure class="fig">
@@ -200,9 +190,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -219,9 +207,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -238,9 +224,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -257,9 +241,7 @@
 								</div>
 								<figcaption class="user-informations">
 									<span class="__name">Lorem ipsum Silva da Otta</span>
-									<p class="__last-message">
-										Bem vindo ao nosso bot do wpp!
-									</p>
+									<p class="__last-message">Bem vindo ao nosso bot do wpp!</p>
 								</figcaption>
 								<div class="attrs">
 									<span class="message-counter">5</span>
@@ -280,7 +262,7 @@
 				</section>
 
 				<section class="chat-body p-3">
-					<div class="realtime-message">
+					<div class="middline-text">
 						<div class="__middline"></div>
 						<div class="__text">Conversa ao vivo</div>
 						<div class="__middline"></div>
@@ -298,9 +280,12 @@
 							class="d-none"
 							title="Escolha um arquivo" />
 					</label>
-					<textarea
-						class="__write-message bg-white rounded-5"
-						placeholder="Escreva uma mensagem"></textarea>
+					<div class="write-message-container bg-white rounded-5">
+						<textarea
+							class="__write-message"
+							rows="1"
+							placeholder="Escreva uma mensagem"></textarea>
+					</div>
 					<button class="__send-message bg-white rounded-circle"></button>
 				</section>
 			</article>

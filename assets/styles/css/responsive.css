@@ -1,7 +1,34 @@
+@media (max-width: 575.98px) {
+  ._expanded ~ .mobile-backdrop {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 990;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.63);
+  }
+  .menu-button {
+    position: fixed;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    z-index: 998;
+    border: none;
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    background: url(./../../image/icon/menu.png) no-repeat center, #fff;
+    background-size: 1.25rem;
+  }
+}
 @media (min-width: 575.98px) {
   body {
     position: relative;
     background-size: 100% 100%;
+  }
+  .menu-button {
+    display: none;
   }
   .home-body .nav-menu {
     position: fixed;
@@ -45,36 +72,40 @@
   .home-body .nav-menu:not(:hover) .nav-option:not(.logout) {
     border-bottom: 1px solid #EEEEEE;
   }
-  .home-body .main-container:not(.pt-0) {
+  .home-body .mobile-backdrop {
+    display: none;
+  }
+  .home-body .main-container:not(.pt-0, .flux-main) {
     padding-top: 3rem !important;
   }
-  .home-body .main-container:not(.pt-0) .home-header .information-container {
+  .home-body .main-container:not(.pt-0, .flux-main) .home-header .information-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
   }
-  .home-body .main-container:not(.pt-0) .home-header .information-container .__right {
+  .home-body .main-container:not(.pt-0, .flux-main) .home-header .information-container .__right {
     width: max-content;
     margin-left: auto;
     margin-right: 0;
     font-size: 0.87rem !important;
   }
-  .home-body .main-container:not(.pt-0) .principal-content .data-container .information-container .data .__top {
+  .home-body .main-container:not(.pt-0, .flux-main) .principal-content .data-container .information-container .data .__top {
     font-size: 1.5rem !important;
   }
-  .home-body .main-container:not(.pt-0) .principal-content .data-container .information-container .data .__bottom {
+  .home-body .main-container:not(.pt-0, .flux-main) .principal-content .data-container .information-container .data .__bottom {
     font-size: 0.8rem !important;
   }
-  .home-body .main-container:not(.pt-0) .principal-content .news-container .__title {
+  .home-body .main-container:not(.pt-0, .flux-main) .principal-content .news-container .__title {
     font-size: 1rem !important;
   }
-  .home-body .main-container:not(.pt-0) .make-update {
+  .home-body .main-container:not(.pt-0, .flux-main) .make-update {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .home-body .main-container:not(.pt-0) .make-update .left, .home-body .main-container:not(.pt-0) .make-update .right {
+  .home-body .main-container:not(.pt-0, .flux-main) .make-update .left,
+  .home-body .main-container:not(.pt-0, .flux-main) .make-update .right {
     width: 100%;
   }
 }
