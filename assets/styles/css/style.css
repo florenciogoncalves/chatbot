@@ -999,6 +999,11 @@ body.cadastro-body {
   overflow: hidden;
   top: 50;
 }
+._page--flux .main-container .left-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 ._page--flux .main-container .left-side .__title {
   font-size: 1.35rem !important;
   font-weight: 500;
@@ -1009,6 +1014,156 @@ body.cadastro-body {
   color: #60D66A;
   text-transform: uppercase;
   font-size: 0.75rem !important;
+}
+._page--flux .main-container .left-side .text-container {
+  border: 2px solid #009329;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+._page--flux .main-container .left-side .text-container .controllers {
+  height: max-content;
+  display: flex;
+  gap: 0.35rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  border: 2px solid #009329;
+  background: #009329;
+}
+._page--flux .main-container .left-side .text-container .controllers .text-modifier {
+  height: 1.35rem;
+  width: 1.35rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: no-repeat center, #fff;
+  background-size: 0.55rem;
+}
+._page--flux .main-container .left-side .text-container .controllers .text-modifier._b {
+  background-image: url(./../../image/icon/b.svg);
+}
+._page--flux .main-container .left-side .text-container .controllers .text-modifier._i {
+  background-size: 0.65rem;
+  background-image: url(./../../image/icon/i.svg);
+}
+._page--flux .main-container .left-side .text-container .controllers .text-modifier._u {
+  background-image: url(./../../image/icon/u.svg);
+}
+._page--flux .main-container .left-side .text-container .controllers .text-modifier._s {
+  background-size: 0.65rem;
+  background-image: url(./../../image/icon/s.svg);
+}
+._page--flux .main-container .left-side .text-container .flux-text {
+  height: 9rem;
+  border: none;
+  outline: none;
+  padding: 0.35rem 0.5rem;
+  overflow-y: scroll;
+  font-size: 0.85rem !important;
+  font-weight: 500;
+}
+._page--flux .main-container .left-side .text-container .flux-text::-webkit-scrollbar {
+  display: none;
+}
+._page--flux .main-container .left-side .text-container .flux-text * {
+  font-size: 0.85rem !important;
+}
+._page--flux .main-container .left-side .middline-text {
+  grid-template-columns: 1fr auto;
+}
+._page--flux .main-container .left-side .middline-text .__text {
+  font-size: 0.7rem !important;
+  font-weight: 400;
+}
+._page--flux .main-container .left-side .delay-container {
+  padding-top: 2rem;
+  border: 2px dashed #009329;
+}
+._page--flux .main-container .left-side .delay-container .input-container {
+  display: grid;
+  grid-template-columns: 1fr 2.8rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+._page--flux .main-container .left-side .delay-container .input-container .delay-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 6px;
+}
+._page--flux .main-container .left-side .delay-container .input-container .delay-range::-webkit-slider-runnable-track {
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+}
+._page--flux .main-container .left-side .delay-container .input-container .delay-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background: #009329;
+  margin-top: -5px;
+}
+._page--flux .main-container .left-side .delay-container .input-container .delay-count {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+._page--flux .main-container .left-side .delay-container .checkbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #323232;
+}
+._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-input:checked {
+  background: url(./../../image/icon/checked.svg) no-repeat center;
+  background-size: 0.85rem;
+}
+._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label {
+  color: #323232;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  user-select: none;
+}
+._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label,
+._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label * {
+  font-size: 0.775rem !important;
+}
+._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label ._text--green-medium, ._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label .__header-title, ._page--flux .home-body .main-container .left-side .delay-container .checkbox-container .checkbox-label .home-header .information-container .__right, .home-body ._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label .home-header .information-container .__right, ._page--flux .home-body .main-container .home-header .information-container .left-side .delay-container .checkbox-container .checkbox-label .__right, .home-body ._page--flux .main-container .home-header .information-container .left-side .delay-container .checkbox-container .checkbox-label .__right, ._page--flux .home-body .main-container .left-side .delay-container .checkbox-container .checkbox-label .recently-added-contacts .__title, .home-body ._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label .recently-added-contacts .__title, ._page--flux .home-body .main-container .recently-added-contacts .left-side .delay-container .checkbox-container .checkbox-label .__title, .home-body ._page--flux .main-container .recently-added-contacts .left-side .delay-container .checkbox-container .checkbox-label .__title {
+  color: #009329;
+  font-weight: 500;
+}
+._page--flux .main-container .left-side .delay-container .delay-footer-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-top: 2px dashed #009329;
+  text-transform: uppercase;
+  font-size: 0.85rem !important;
+}
+._page--flux .main-container .left-side .options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem 0.75rem;
+  margin-top: auto;
+}
+._page--flux .main-container .left-side .options .option {
+  height: 5rem;
+  border: 2px dashed #009329;
+  border-radius: 0.75rem;
+}
+._page--flux .main-container .left-side .options input, ._page--flux .main-container .left-side .options button {
+  display: none;
 }
 ._page--flux .main-container .right-side {
   width: 100%;

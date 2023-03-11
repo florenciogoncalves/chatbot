@@ -73,80 +73,86 @@
 		<input type="button" class="menu-button" />
 
 		<main class="main-container col-sm-9 rounded-3 row m-0 bg-white pt-0">
-			<aside class="left-side col-5 bg-white p-3 py-4">
-				<h1 class="__title">Configurações de Fluxo</h1>
+			<aside class="left-side col-5 bg-white p-4 pt-4">
+				<h1 class="__title mb-1">Configurações de Fluxo</h1>
 				<span class="__subtitle">Lorem ipsum exemplo</span>
-				<form action="" class="content">
-					<div class="text-container">
-						<div class="controllers">
-							<button class="text-modifier" type="button"></button>
-							<button class="text-modifier" type="button"></button>
-							<button class="text-modifier" type="button"></button>
-							<button class="text-modifier" type="button"></button>
+				<form method="post" action="" class="content pt-4 pt-sm-5">
+					<div class="text-container rounded-3">
+						<div class="controllers px-2">
+							<button class="text-modifier _b" type="button"></button>
+							<button class="text-modifier _i" type="button"></button>
+							<button class="text-modifier _u" type="button"></button>
+							<button class="text-modifier _s" type="button"></button>
 						</div>
-						<textarea
-							name="flux-text"
+						<div
+							contenteditable="true"
 							class="flux-text"
-							placeholder="Escreva o seu texto..."></textarea>
+							placeholder="Escreva o seu texto..."></div>
+						<input type="hidden" name="flux-text" id="flux-text" value="" />
 					</div>
 
-					<div class="middline-text">
+					<div class="middline-text my-2">
 						<div class="__middline"></div>
 						<div class="__text">Aguardando resposta</div>
 					</div>
 
-					<div class="delay-container">
-						<input
-							type="range"
-							name="delay-range"
-							id="delay-range"
-							class="delay-range" min="0" max="6" value="3"/>
-						<span class="delay-count">6 seg</span>
-						<div class="checkbox-container">
-							<input type="checkbox" id="active-typing" />
-							<label for="active-typing">Ativar “digitando...”</label>
+					<div class="delay-container rounded-4">
+						<div class="input-container  px-sm-2">
+							<input
+								type="range"
+								name="delay-range"
+								id="delay-range"
+								class="delay-range"
+								min="0"
+								max="6"
+								value="3" />
+							<span class="delay-count"></span>
+						</div>
+						<div class="checkbox-container ps-2">
+							<input type="checkbox" id="active-typing" name="active-typing" class="checkbox-input rounded-1"/>
+							<label class="checkbox-label" for="active-typing">Ativar <span class="_text--green-medium">“digitando....”</span></label>
 						</div>
 						<span class="delay-footer-message">Delay</span>
 					</div>
 
 					<div class="options">
-						<label class="option" for="">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
+							<img src="./../assets/image/icon/text.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Texto</span
 							><input type="text" />
 						</label>
-						<label class="option" for="image">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="image">
+							<img src="./../assets/image/icon/image.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Imagem</span
 							><input id="image" type="file" accept="image/*" />
 						</label>
-						<label class="option" for="video">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="video">
+							<img src="./../assets/image/icon/video.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Video</span
 							><input id="video" type="file" accept="video/*" />
 						</label>
-						<label class="option" for="file">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="file">
+							<img src="./../assets/image/icon/file-2.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Arquivo</span
 							><input id="file" type="file" />
 						</label>
-						<label class="option" for="">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
+							<img src="./../assets/image/icon/autooff.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Autooff</span
 							><input type="text" />
 						</label>
-						<label class="option" for="">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
+							<img src="./../assets/image/icon/delay.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Delay</span
 							><input type="text" />
 						</label>
-						<label class="option" for="">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
+							<img src="./../assets/image/icon/save.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Salvar</span
 							><input type="text" />
 						</label>
-						<label class="option" for="audio">
-							<img src="" alt="" class="__icon" /><span class="__label"
+						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="audio">
+							<img src="./../assets/image/icon/audio.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Audio</span
 							><input id="audio" type="file" accept="audio/*" />
 						</label>
@@ -156,19 +162,20 @@
 
 			<article class="right-side col p-0 p-sm-3">
 				<div class="flux-container rounded-3">
-          <div class="header">
-					<button class="opt new"></button>
-					<button class="opt view"></button><button class="opt copy"></button>
-				</div>
+					<div class="header">
+						<button class="opt new"></button>
+						<button class="opt view"></button><button class="opt copy"></button>
+					</div>
 
-				<div class="main-flux">
-					<div class="flux-card">
-						<div class="flux-header"></div>
+					<div class="main-flux">
+						<div class="flux-card">
+							<div class="flux-header"></div>
+						</div>
 					</div>
 				</div>
-        </div>
 			</article>
 		</main>
 		<script type="module" src="./../assets/scripts/script.js"></script>
+		<script src="./../assets/scripts/flux.js"></script>
 	</body>
 </html>

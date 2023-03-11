@@ -1021,6 +1021,9 @@ body {
 		overflow: hidden;
 		top: 50;
 		.left-side {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
 			.__title {
 				font-size: 1.35rem !important;
 				font-weight: 500;
@@ -1032,6 +1035,164 @@ body {
 				color: $text-green-light;
 				text-transform: uppercase;
 				font-size: 0.75rem !important;
+			}
+			.text-container {
+				border: 2px solid $background-green;
+				display: flex;
+				flex-direction: column;
+				overflow: hidden;
+				.controllers {
+					height: max-content;
+					display: flex;
+					gap: 0.35rem;
+					padding-top: 0.5rem;
+					padding-bottom: 0.3rem;
+					border: 2px solid $background-green;
+
+					background: $background-green;
+					.text-modifier {
+						height: 1.35rem;
+						width: 1.35rem;
+						border-radius: 0.5rem;
+						border: none;
+
+						background: no-repeat center, $white;
+						background-size: 0.55rem;
+
+						&._b {
+							background-image: url(./../../image/icon/b.svg);
+						}
+						&._i {
+							background-size: 0.65rem;
+							background-image: url(./../../image/icon/i.svg);
+						}
+						&._u {
+							background-image: url(./../../image/icon/u.svg);
+						}
+						&._s {
+							background-size: 0.65rem;
+							background-image: url(./../../image/icon/s.svg);
+						}
+					}
+				}
+				.flux-text {
+					height: 9rem;
+					border: none;
+					outline: none;
+					padding: 0.35rem 0.5rem;
+					overflow-y: scroll;
+					&::-webkit-scrollbar {
+						display: none;
+					}
+
+					font-size: 0.85rem !important;
+					* {
+						font-size: 0.85rem !important;
+					}
+					font-weight: 500;
+				}
+			}
+			.middline-text {
+				grid-template-columns: 1fr auto;
+				.__text {
+					font-size: 0.7rem !important;
+					font-weight: 400;
+				}
+			}
+			.delay-container {
+				padding-top: 2rem;
+				border: 2px dashed $background-green;
+
+				.input-container {
+					display: grid;
+					grid-template-columns: 1fr 2.8rem;
+					gap: 1rem;
+					align-items: center;
+					padding: 0 0.5rem;
+
+					.delay-range {
+						-webkit-appearance: none;
+						appearance: none;
+						width: 100%;
+						height: 10px;
+						background: #ddd;
+						border-radius: 6px;
+						&::-webkit-slider-runnable-track {
+							height: 10px;
+							border-radius: 5px;
+							background: #ddd;
+						}
+
+						&::-webkit-slider-thumb {
+							-webkit-appearance: none;
+							height: 22px;
+							width: 22px;
+							border-radius: 50%;
+							background: $background-green;
+							margin-top: -5px;
+						}
+					}
+					.delay-count {
+						font-weight: 600;
+						text-transform: uppercase;
+					}
+				}
+				.checkbox-container {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					padding: 1rem 0;
+					gap: 0.5rem;
+					.checkbox-input {
+						-webkit-appearance: none;
+						appearance: none;
+						width: 1.25rem;
+						height: 1.25rem;
+						border: 1px solid #323232;
+						&:checked {
+							background: url(./../../image/icon/checked.svg) no-repeat center;
+							background-size: 0.85rem;
+						}
+					}
+					.checkbox-label {
+						color: #323232;
+						text-transform: uppercase;
+						letter-spacing: 0.05rem;
+						user-select: none;
+						&,
+						* {
+							font-size: 0.775rem !important;
+						}
+						._text--green-medium {
+							color: $background-green;
+							font-weight: 500;
+						}
+					}
+				}
+				.delay-footer-message {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding: .5rem 0;
+					border-top: 2px dashed $background-green;
+				
+					text-transform: uppercase;
+					font-size: .85rem !important;
+				}
+			}
+			.options {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				gap: .5rem .75rem;
+				margin-top: auto;
+				.option {
+					height: 5rem;
+					border: 2px dashed $background-green;
+					border-radius: .75rem;
+				}
+				input, button {
+					display: none;
+				}
 			}
 		}
 		.right-side {
@@ -1046,20 +1207,26 @@ body {
 					flex-direction: row;
 					justify-content: center;
 					gap: 2rem;
-					padding: .65rem 0;
-				
+					padding: 0.65rem 0;
+
 					background: rgba($color: $black, $alpha: 0.63);
 
 					.opt {
-						width: .9rem;
-						height: .9rem;
+						width: 0.9rem;
+						height: 0.9rem;
 						border: none;
 
 						background: no-repeat center;
 						background-size: contain;
-						&.new{background-image: url(./../../image/icon/new.svg);}
-						&.view{background-image: url(./../../image/icon/view.svg);}
-						&.copy{background-image: url(./../../image/icon/copy.svg);}
+						&.new {
+							background-image: url(./../../image/icon/new.svg);
+						}
+						&.view {
+							background-image: url(./../../image/icon/view.svg);
+						}
+						&.copy {
+							background-image: url(./../../image/icon/copy.svg);
+						}
 					}
 				}
 				.main-flux {
