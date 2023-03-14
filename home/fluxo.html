@@ -76,7 +76,7 @@
 			<aside class="left-side col-5 bg-white p-4 pt-4">
 				<h1 class="__title mb-1">Configurações de Fluxo</h1>
 				<span class="__subtitle">Lorem ipsum exemplo</span>
-				<form method="post" action="" class="content pt-4 pt-sm-5">
+				<form method="post" action="" class="content-form pt-4 pt-sm-5 pb-sm-2 d-flex flex-column h-100">
 					<div class="text-container rounded-3">
 						<div class="controllers px-2">
 							<button class="text-modifier _b" type="button"></button>
@@ -97,7 +97,7 @@
 					</div>
 
 					<div class="delay-container rounded-4">
-						<div class="input-container  px-sm-2">
+						<div class="input-container  px-sm-3 py-2">
 							<input
 								type="range"
 								name="delay-range"
@@ -105,17 +105,17 @@
 								class="delay-range"
 								min="0"
 								max="6"
-								value="3" />
+								value="0" />
 							<span class="delay-count"></span>
 						</div>
-						<div class="checkbox-container ps-2">
+						<div class="checkbox-container ps-3 d-flex flex-row">
 							<input type="checkbox" id="active-typing" name="active-typing" class="checkbox-input rounded-1"/>
 							<label class="checkbox-label" for="active-typing">Ativar <span class="_text--green-medium">“digitando....”</span></label>
 						</div>
 						<span class="delay-footer-message">Delay</span>
 					</div>
 
-					<div class="options">
+					<div class="options mt-auto pt-4">
 						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
 							<img src="./../assets/image/icon/text.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Texto</span
@@ -167,9 +167,15 @@
 						<button class="opt view"></button><button class="opt copy"></button>
 					</div>
 
-					<div class="main-flux">
-						<div class="flux-card">
-							<div class="flux-header"></div>
+					<div class="main-flux ">
+						<div class="flux-card rounded-4">
+							<span class="flux-card-header _bg-dark">Conteudo</span>
+							<div class="flux-card-body"></div>
+						</div>
+
+						<div class="flux-card rounded-4">
+							<span class="flux-card-header"></span>
+							<div class="flux-card-body"></div>
 						</div>
 					</div>
 				</div>

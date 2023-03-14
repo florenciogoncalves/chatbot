@@ -1015,7 +1015,15 @@ body.cadastro-body {
   text-transform: uppercase;
   font-size: 0.75rem !important;
 }
+._page--flux .main-container .left-side .content-form {
+  overflow-y: scroll;
+}
+._page--flux .main-container .left-side .content-form::-webkit-scrollbar {
+  display: none;
+}
 ._page--flux .main-container .left-side .text-container {
+  min-height: 12rem;
+  height: 12rem;
   border: 2px solid #009329;
   display: flex;
   flex-direction: column;
@@ -1053,7 +1061,7 @@ body.cadastro-body {
   background-image: url(./../../image/icon/s.svg);
 }
 ._page--flux .main-container .left-side .text-container .flux-text {
-  height: 9rem;
+  height: 100%;
   border: none;
   outline: none;
   padding: 0.35rem 0.5rem;
@@ -1129,9 +1137,13 @@ body.cadastro-body {
   background-size: 0.85rem;
 }
 ._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label {
+  height: max-content;
+  display: flex;
+  margin: auto 0;
   color: #323232;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
+  line-height: 1;
   user-select: none;
 }
 ._page--flux .main-container .left-side .delay-container .checkbox-container .checkbox-label,
@@ -1149,7 +1161,8 @@ body.cadastro-body {
   padding: 0.5rem 0;
   border-top: 2px dashed #009329;
   text-transform: uppercase;
-  font-size: 0.85rem !important;
+  font-size: 0.855 rem !important;
+  letter-spacing: 0.05rem;
 }
 ._page--flux .main-container .left-side .options {
   display: grid;
@@ -1162,7 +1175,13 @@ body.cadastro-body {
   border: 2px dashed #009329;
   border-radius: 0.75rem;
 }
-._page--flux .main-container .left-side .options input, ._page--flux .main-container .left-side .options button {
+._page--flux .main-container .left-side .options .option .__label {
+  color: #009329;
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
+}
+._page--flux .main-container .left-side .options input,
+._page--flux .main-container .left-side .options button {
   display: none;
 }
 ._page--flux .main-container .right-side {
@@ -1173,6 +1192,9 @@ body.cadastro-body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #e4e5ea;
 }
 ._page--flux .main-container .right-side .flux-container .header {
   display: flex;
@@ -1199,9 +1221,48 @@ body.cadastro-body {
   background-image: url(./../../image/icon/copy.svg);
 }
 ._page--flux .main-container .right-side .flux-container .main-flux {
+  position: relative;
   height: 100%;
+  width: calc(100% - 3px);
+  box-sizing: border-box;
+  padding: 0 2rem 2rem;
+  overflow-y: scroll;
+}
+._page--flux .main-container .right-side .flux-container .main-flux::-webkit-scrollbar {
+  width: 6px;
+  top: 0;
+}
+._page--flux .main-container .right-side .flux-container .main-flux::-webkit-scrollbar-thumb {
+  border-radius: 0.15rem;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+._page--flux .main-container .right-side .flux-container .main-flux::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(50, 50, 50, 0.25);
+}
+._page--flux .main-container .right-side .flux-container .main-flux .flux-card {
+  width: 75%;
+  min-height: 20rem;
+  height: max-content;
+  margin-top: 2.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+._page--flux .main-container .right-side .flux-container .main-flux .flux-card .flux-card-header {
   width: 100%;
-  background: #e4e5ea;
+  height: 2.35rem;
+  padding: 0.5rem 1.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #009329;
+}
+._page--flux .main-container .right-side .flux-container .main-flux .flux-card .flux-card-header._bg-dark {
+  background: #323232;
+  color: #fff;
 }
 
 .modal .__label {

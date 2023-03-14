@@ -108,6 +108,9 @@
   .home-body .main-container:not(.pt-0, .flux-main) .make-update .right {
     width: 100%;
   }
+  .flux-card {
+    width: 55% !important;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
