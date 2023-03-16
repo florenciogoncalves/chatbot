@@ -747,6 +747,19 @@ body.cadastro-body {
   background-image: url(./../../image/icon/delete.svg);
 }
 
+._page--chat .menu-button {
+  top: 0.7rem;
+  right: 1.5rem;
+  left: auto;
+  box-shadow: none;
+  background-color: transparent;
+}
+._page--chat .back-to-list {
+  width: 0.85rem;
+  cursor: pointer;
+  background: url(./../../image/icon/back.png) no-repeat center;
+  background-size: contain;
+}
 ._page--chat .main-container .contact-list {
   height: 100%;
   position: relative;
@@ -771,12 +784,13 @@ body.cadastro-body {
   cursor: pointer;
 }
 ._page--chat .main-container .contact-list .list-controllers .filter-container .__filter .toggle {
-  width: 100%;
+  max-width: 90%;
   height: 100%;
   padding: 0;
   border: none;
   font-weight: 300;
-  font-size: 1.35rem !important;
+  font-size: 100% !important;
+  white-space: nowrap;
   background: none;
 }
 ._page--chat .main-container .contact-list .list-controllers .filter-container .__filter._selected .toggle {
@@ -789,7 +803,7 @@ body.cadastro-body {
   background: #F1F1F1;
 }
 ._page--chat .main-container .contact-list .list-controllers .__title {
-  font-size: 1.35rem !important;
+  font-size: 1.25rem !important;
   font-weight: 500;
 }
 ._page--chat .main-container .contact-list .list-of-users {
@@ -986,6 +1000,15 @@ body.cadastro-body {
   border: none;
   background: url(./../../image/icon/send.svg) no-repeat center;
   background-size: 1.15rem;
+}
+._page--chat .main-container._mobile-view .contact-list {
+  display: none;
+  position: fixed;
+}
+._page--chat .main-container._mobile-view .contact-list._select-bot-message {
+  position: fixed !important;
+  display: grid !important;
+  width: 100%;
 }
 
 ._page--flux {

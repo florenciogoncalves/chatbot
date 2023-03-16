@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="./../assets/styles/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="./../assets/styles/css/style.css" />
 		<link rel="stylesheet" href="./../assets/styles/css/responsive.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.0/purify.min.js"></script>
 	</head>
 	<body class="home-body _page--chat">
 		<nav class="nav-menu py-4">
@@ -73,7 +74,7 @@
 		<input type="button" class="menu-button" />
 
 		<main class="main-container row m-0 bg-white h-100 ps-sm-5 pt-0">
-			<aside class="contact-list col-4 bg-white ps-0 ps-sm-3 pe-sm-0">
+			<aside class="contact-list overflow-hidden col-4 bg-white ps-0 ps-sm-3 pe-0">
 				<form action="" class="list-controllers">
 					<ul class="filter-container">
 						<li class="__filter _selected _all">
@@ -255,6 +256,7 @@
 
 			<article class="chat col p-0">
 				<section class="chat-header bg-white">
+					<span class="back-to-list d-sm-none"></span>
 					<div class="image-container">
 						<img src="" alt=" " class="__bot-image img-fluid" />
 					</div>

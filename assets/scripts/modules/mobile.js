@@ -13,7 +13,31 @@ export default function mobile() {
 
 	window.addEventListener("resize", () => {
 		if (window.innerWidth > 575.98) {
-			sideBar.classList.remove('_expanded')
+			sideBar.classList.remove("_expanded");
+		}
+		if (document.querySelector("._page--chat")) {
+			chatMobile();
 		}
 	});
+	function chatMobile() {
+		const mainContainer = document.querySelector(".main-container");
+		const contactList = document.querySelector(".contact-list");
+
+		// Atribuir vista mobile
+		if (window.innerWidth <= 575.98) {
+			mainContainer.classList.add("_mobile-view");
+			contactList.classList.add("_select-bot-message");
+		} else mainContainer.classList.remove("_mobile-view");
+
+		// Tela de chat
+		document.querySelector(".back-to-list").addEventListener("click", () => {
+			contactList.classList.add("_select-bot-message");
+		});
+		document.querySelectorAll(".user-bot").forEach((element) => {
+			element.addEventListener("click", () => {
+				contactList.classList.remove("_select-bot-message");
+			});
+		});
+	}
+	if (document.querySelector("._page--chat")) chatMobile();
 }
