@@ -114,6 +114,13 @@
   ._page--chat .main-container .contact-list .list-controllers .filter-container .__filter .toggle {
     font-size: 1.35rem !important;
   }
+  ._page--flux .main-container {
+    height: 90%;
+    margin: auto !important;
+  }
+  .chat-body .__text-message {
+    max-width: 60% !important;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */

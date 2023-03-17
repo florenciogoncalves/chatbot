@@ -72,11 +72,15 @@
 		<div class="mobile-backdrop"></div>
 		<input type="button" class="menu-button" />
 
-		<main class="main-container col-sm-9 rounded-3 row m-0 bg-white pt-0">
+		<main
+			class="main-container col-md-9 ps-sm-5 ps-md-1 rounded-3 row m-0 bg-white pt-0">
 			<aside class="left-side col-5 bg-white p-4 pt-4">
 				<h1 class="__title mb-1">Configurações de Fluxo</h1>
 				<span class="__subtitle">Lorem ipsum exemplo</span>
-				<form method="post" action="" class="content-form pt-4 pt-sm-5 pb-sm-2 d-flex flex-column h-100">
+				<form
+					method="post"
+					action=""
+					class="content-form pt-4 pt-sm-5 pb-sm-2 d-flex flex-column h-100">
 					<div class="text-container rounded-3">
 						<div class="controllers px-2">
 							<button class="text-modifier _b" type="button"></button>
@@ -97,7 +101,7 @@
 					</div>
 
 					<div class="delay-container rounded-4">
-						<div class="input-container  px-sm-3 py-2">
+						<div class="input-container px-sm-3 py-2">
 							<input
 								type="range"
 								name="delay-range"
@@ -109,50 +113,101 @@
 							<span class="delay-count"></span>
 						</div>
 						<div class="checkbox-container ps-3 d-flex flex-row">
-							<input type="checkbox" id="active-typing" name="active-typing" class="checkbox-input rounded-1"/>
-							<label class="checkbox-label" for="active-typing">Ativar <span class="_text--green-medium">“digitando....”</span></label>
+							<input
+								type="checkbox"
+								id="active-typing"
+								name="active-typing"
+								class="checkbox-input rounded-1" />
+							<label class="checkbox-label" for="active-typing"
+								>Ativar
+								<span class="_text--green-medium">“digitando....”</span></label
+							>
 						</div>
 						<span class="delay-footer-message">Delay</span>
 					</div>
 
 					<div class="options mt-auto pt-4">
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
-							<img src="./../assets/image/icon/text.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							class="option d-flex flex-column align-items-center justify-content-center gap-2"
+							for="">
+							<img
+								src="./../assets/image/icon/text.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Texto</span
 							><input type="text" />
 						</label>
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="image">
-							<img src="./../assets/image/icon/image.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							class="option d-flex flex-column align-items-center justify-content-center gap-2"
+							for="image">
+							<img
+								src="./../assets/image/icon/image.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Imagem</span
 							><input id="image" type="file" accept="image/*" />
 						</label>
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="video">
-							<img src="./../assets/image/icon/video.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							class="option d-flex flex-column align-items-center justify-content-center gap-2"
+							for="video">
+							<img
+								src="./../assets/image/icon/video.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Video</span
 							><input id="video" type="file" accept="video/*" />
 						</label>
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="file">
-							<img src="./../assets/image/icon/file-2.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							class="option d-flex flex-column align-items-center justify-content-center gap-2"
+							for="file">
+							<img
+								src="./../assets/image/icon/file-2.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Arquivo</span
 							><input id="file" type="file" />
 						</label>
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
-							<img src="./../assets/image/icon/autooff.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							class="option d-flex flex-column align-items-center justify-content-center gap-2"
+							for="">
+							<img
+								src="./../assets/image/icon/autooff.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Autooff</span
 							><input type="text" />
 						</label>
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
-							<img src="./../assets/image/icon/delay.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							class="option d-flex flex-column align-items-center justify-content-center gap-2"
+							for="">
+							<img
+								src="./../assets/image/icon/delay.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Delay</span
 							><input type="text" />
 						</label>
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="">
-							<img src="./../assets/image/icon/save.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							for="save-btn"
+							class="option d-flex flex-column align-items-center justify-content-center gap-2">
+							<img
+								src="./../assets/image/icon/save.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Salvar</span
-							><input type="text" />
+							><button
+								type="button"
+								id="save-btn"
+								data-bs-toggle="modal"
+								data-bs-target="#saveModal"></button>
 						</label>
-						<label class="option d-flex flex-column align-items-center justify-content-center gap-2" for="audio">
-							<img src="./../assets/image/icon/audio.svg" alt="" class="__icon img-fluid col-4 mx-auto" /><span class="__label"
+						<label
+							class="option d-flex flex-column align-items-center justify-content-center gap-2"
+							for="audio">
+							<img
+								src="./../assets/image/icon/audio.svg"
+								alt=""
+								class="__icon img-fluid col-4 mx-auto" /><span class="__label"
 								>Audio</span
 							><input id="audio" type="file" accept="audio/*" />
 						</label>
@@ -167,10 +222,14 @@
 						<button class="opt view"></button><button class="opt copy"></button>
 					</div>
 
-					<div class="main-flux ">
+					<div class="main-flux">
 						<div class="flux-card rounded-4">
 							<span class="flux-card-header _bg-dark">Conteudo</span>
-							<div class="flux-card-body"></div>
+							<div class="flux-card-body">
+								<input type="text" class="__input" value="Oie, tudo bem?"/>
+								<input type="text" class="__input _green" value="Digitando..."/>
+								<input type="text" class="__input _borded" placeholder="Insira uma pergunta"/>
+							</div>
 						</div>
 
 						<div class="flux-card rounded-4">
@@ -181,7 +240,45 @@
 				</div>
 			</article>
 		</main>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="saveModal"
+			tabindex="-1"
+			aria-labelledby="saveModalLabel"
+			aria-hidden="true"
+			data-bs-backdrop="static"
+			data-bs-keyboard="false"
+			aria-labelledby="staticBackdropLabel">
+			<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+				<form action="" class="modal-content px-3 px-sm-4 pb-4">
+					<div class="modal-header border-0">
+						<h1 class="modal-title mx-auto fs-5 mt-sm-4" id="saveModalLabel">
+							Criar nova transmissão
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<ul class="modal-body">
+						<li class="save-flux d-flex gap-3">
+							<img src="" alt="" class="__image col-auto" />
+							<div class="information col my-auto">
+								<h4 class="__name mb-0">Lorem Ipsum</h4>
+								<span class="__text">Lorem ipsum</span>
+							</div>
+							<button class="btn btn-primary save-btn col-4">Salvar</button>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+
 		<script type="module" src="./../assets/scripts/script.js"></script>
+		<script src="./../assets/scripts/bootstrap.min.js"></script>
 		<script src="./../assets/scripts/flux.js"></script>
 	</body>
 </html>

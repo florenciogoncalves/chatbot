@@ -179,6 +179,17 @@
 			}
 		}
 	}
+	._page--flux .main-container {
+		height: 90%;
+		margin: auto !important;
+
+	}
+
+	.chat-body {
+		.__text-message {
+			max-width: 60% !important;
+		}
+	}
 }
 
 // Dispositivos médios (tablets com 768px ou mais)
